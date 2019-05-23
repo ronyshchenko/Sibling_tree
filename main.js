@@ -17,12 +17,12 @@ tree.onclick = function(event) {
   let target = event.target;
 
   if (target.tagName != 'SPAN') {
-    return; // клик был не на заголовке
+    return;
   }
 
-  let li = target.parentNode; // получить родительский LI
+  let li = target.parentNode;
   let childrenContainer = li.getElementsByTagName('ul')[0];
 
-  if (!childrenContainer) return; // потомков нет -- ничего не надо делать
-  childrenContainer.hidden = !childrenContainer.hidden;
+  if (!childrenContainer) return;
+    childrenContainer.hidden = !childrenContainer.hidden;
 }
