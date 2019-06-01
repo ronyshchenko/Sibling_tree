@@ -3,7 +3,7 @@
 const tree = document.querySelectorAll('ul')[0];
 
 tree.addEventListener('click', (event) => {
-  let target = event.target;
+  const {target} = event;
 
   if (target.tagName != 'SPAN') {
     return;
